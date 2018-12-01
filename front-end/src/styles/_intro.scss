@@ -1,0 +1,52 @@
+.call-to-action {
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  img {
+    width: 250px;
+    border: 1px solid $white;
+  }
+  .cta-description {
+    border: 1px solid $white;
+    border-right: none;
+    height: 250px;
+    width: 50vw;
+    padding: 30px;
+    font-family: $gotham;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px 30px;
+    h3 {
+      font-family: 'Sacramento', cursive;
+      text-transform: lowercase;
+      font-weight: 100;
+      font-size: 48px;
+      margin: 0px;
+    }
+    p{
+      font-size: 30px;
+      font-weight: 100;
+      letter-spacing: 10px;
+      margin: 5px 0px 20px 0px;
+    }
+    button {
+      font-family: $gotham;
+      font-size: 18px;
+      letter-spacing: 10px;
+      font-weight: bold;
+      border: 1px solid white;
+      min-height: 40px;
+    }
+  }
+}

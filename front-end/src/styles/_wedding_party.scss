@@ -1,0 +1,54 @@
+#section-three {
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.slick-people-section {
+  .slick-slider {
+  }
+}
+.people-slide {
+  height: 300px;
+  background: $ice;
+  border: 30px solid $white;
+  border-bottom: none;
+  position: relative;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &.hers {
+    transform: skewX(-15deg);
+    h3, p {
+      transform: skewX(15deg);
+    }
+    h3 {
+      font-size: 42px;
+      color: $white;
+      font-family: $playfair;
+    }
+    p {
+      font-size: 28px;
+      color: $white;
+      font-family: $gotham;
+      padding-left: 60px;
+    }
+}
+  &.his {
+    transform: skewX(-15deg);
+    h3, p {
+      transform: skewX(15deg);
+    }
+    h3 {
+      font-size: 42px;
+      color: $white;
+      font-family: $playfair;
+    }
+    p {
+      font-size: 28px;
+      color: $white;
+      font-family: $gotham;
+      padding-left: 60px;
+    }
+  }
+}

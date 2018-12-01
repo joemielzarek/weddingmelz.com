@@ -1,0 +1,64 @@
+#section-one {
+  background: $white;
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+  .section-content {
+    width: 100vw;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    .column-1 {
+      min-width: 70vw;
+      display: inline-block;
+      position: relative;
+      .gradient-container {
+        width: 100%;
+        height: 70vh;
+        background: $ice; /* Old browsers */
+        background: -moz-linear-gradient(top, $ice 0%, $green 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, $ice 0%,$green 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, $ice 0%,$green 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$ice', endColorstr='$green',GradientType=0 ); /* IE6-9 */
+        // padding-left: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        img {
+          width: 400px;
+          height: 600px;
+          background: $black;
+          border: 5px solid $white;
+          display: block;
+          position: relative;
+          margin-bottom: -220px;
+          margin-right: -100px;
+        }
+        .text-container {
+          max-width: 20vw;
+        }
+      }
+    }
+    .column-2 {
+      width: 30vw;
+      overflow: hidden;
+      .greenery.right {
+        display: block;
+        transform: scale(1.2) rotate(-10deg);
+      }
+      .circle-logo {
+        filter: invert(100);
+        width: 300px;
+        height: 300px;
+        display: block;
+        position: absolute;
+        margin-left: -60px;
+        margin-top: -60px;
+        z-index: 1;
+      }
+    }
+  }
+}

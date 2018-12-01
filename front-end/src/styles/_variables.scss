@@ -1,0 +1,42 @@
+//Font
+$gotham: "Gotham";
+$playfair: "Playfair Display", serif;
+$sacramento: 'Sacramento', cursive;
+
+//Color
+$white: #fff;
+$ice: #cbefff;
+$navy: #003366;
+$green: #05352b;
+$pink: pink; 
+$black: #222;
+$gray: #eee;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+button {
+  padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.4);
+    color: $white;
+    border: none;
+    text-transform: unset;
+    font-family: "gotham";
+    font-size: 12px;
+}
+
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  padding-left: 65px;
+  padding-top: 30px;
+  h2 {
+    font-weight: bold;
+    border: none;
+    color: $black;
+  }
+}
