@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 
 import './App.css';
@@ -10,8 +11,8 @@ import Details from './components/Details';
 import WeddingParty from './components/WeddingParty';
 import Accomodations from './components/Accomodations';
 import Registry from './components/Registry';
+import Rsvpify from './components/Rsvpify';
 
-import ContactForm from './components/ContactForm';
 
 
 
@@ -19,7 +20,7 @@ import ContactForm from './components/ContactForm';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <ParallaxProvider className="App">
       <Navigation/>
       <Intro/>
       <Story/>
@@ -27,8 +28,8 @@ class App extends Component {
       <WeddingParty/>
       <Accomodations/>
       <Registry/>
-      <ContactForm />
-      </div>
+      <Rsvpify/>
+      </ParallaxProvider>
     );
   }
 }

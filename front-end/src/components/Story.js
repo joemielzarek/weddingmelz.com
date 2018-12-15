@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import ScrollableAnchor from 'react-scrollable-anchor'
+import { Parallax } from 'react-scroll-parallax';
+
 
 import logoAlt from '../images/logo.svg';
 import Greenery from '../images/greenery.png';
@@ -9,18 +11,6 @@ import Us from '../images/details-image.jpg';
 
 
 
-// const FirstFrame = () => (
-//   <Parallax
-//     className="frame-one"
-//     offsetYMax={160}
-//     offsetYMin={0}
-//     offsetXMax={0}
-//     offsetXMin={0}
-//   >
-//     <img className="picture-frame first-frame" src={FrameOne} />
-//   </Parallax>
-// );
-
 
 export default class Story extends Component {
   render() {
@@ -29,18 +19,21 @@ export default class Story extends Component {
         <ScrollableAnchor id={'our-story'}>
           <div id="section-one">
           <div className="section-title">
-          <h2>Our Story</h2>
+          <h2>our story</h2>
           </div>
           <div className="section-content">
           <div className="column column-1">
           <div className="gradient-container">
+          <Parallax  offsetYMax={0} offsetYMin={-30} >
           <img src={Us} alt="joe and bailey"/>
-            <div className="text-container">
+        </Parallax>
+        <div className="text-container">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
+
           </div>
           </div>
           <div className="column column-2">

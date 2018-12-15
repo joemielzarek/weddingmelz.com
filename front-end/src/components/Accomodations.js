@@ -9,7 +9,7 @@ export default class Accomodations extends Component {
         <ScrollableAnchor id={'accomodations'}>
           <div id="section-four">
             <div className="section-title">
-              <h2>Accomodations</h2>
+              <h2>accomodations</h2>
             </div>
             <div>
               <div className="column col-1">

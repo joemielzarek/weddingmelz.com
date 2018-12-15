@@ -37,6 +37,7 @@ class Navigation extends Component {
                 <a href='/#registry'> Registry </a>
               </li>
               <li>
+                <a href='#rsvp'> RSVP </a>
               </li>
             </div>
           </ul>

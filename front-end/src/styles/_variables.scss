@@ -30,13 +30,12 @@ button {
 
 
 .section-title {
-  font-family: 'Playfair Display', serif;
+  font-family: $sacramento;
   font-size: 32px;
-  padding-left: 65px;
-  padding-top: 30px;
+  padding-top: 40px;
   h2 {
-    font-weight: bold;
     border: none;
-    color: $black;
+    color: $ice;
+    font-weight: normal;
   }
 }

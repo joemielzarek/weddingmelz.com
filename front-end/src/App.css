@@ -14,14 +14,13 @@ button {
   font-size: 12px; }
 
 .section-title {
-  font-family: 'Playfair Display', serif;
+  font-family: "Sacramento", cursive;
   font-size: 32px;
-  padding-left: 65px;
-  padding-top: 30px; }
+  padding-top: 40px; }
   .section-title h2 {
-    font-weight: bold;
     border: none;
-    color: #222; }
+    color: #cbefff;
+    font-weight: normal; }
 
 fieldset {
   background-color: transparent;
@@ -153,15 +152,43 @@ select:focus {
     margin: 0; }
     .main-nav .nav-links-container li {
       padding: 0px 20px; }
-  .main-nav li a {
+  .main-nav li > a {
     font-family: "Gotham";
     text-transform: uppercase;
     font-weight: normal;
     text-decoration: none;
     font-size: 12px;
     color: #fff; }
-    .main-nav li a:visited {
+    .main-nav li > a:hover, .main-nav li > a:active {
+      border-bottom: 1px solid #fff;
+      padding-bottom: 2px;
+      transform: all .2s ease-in; }
+    .main-nav li > a:visited {
       color: #fff; }
+
+.section-title h2 {
+  display: flex;
+  align-items: center; }
+  .section-title h2:before {
+    content: '';
+    border-top: 2px solid #cbefff;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+    max-width: 50px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 4px; }
+  .section-title h2:after {
+    content: '';
+    border-top: 2px solid #cbefff;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    border-radius: 4px; }
 
 .slick-section {
   overflow: hidden;
@@ -214,13 +241,17 @@ select:focus {
       font-weight: bold;
       border: 1px solid white;
       min-height: 40px; }
+      .call-to-action .cta-description button a {
+        text-decoration: none; }
+        .call-to-action .cta-description button a:visited {
+          color: #fff;
+          text-decoration: none; }
 
 #section-one {
   background: #fff;
   height: 100vh;
   max-height: 100vh;
-  min-height: 100vh;
-  overflow: hidden; }
+  min-height: 100vh; }
   #section-one .section-content {
     width: 100vw;
     position: relative;
@@ -272,85 +303,123 @@ select:focus {
         display: block;
         position: absolute;
         margin-left: -60px;
-        margin-top: -60px;
+        margin-top: -15px;
         z-index: 1; }
 
 #section-two {
   max-height: 100vh;
   min-height: 100vh; }
-
-.section-content {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .section-content .greenery.left {
-    position: absolute;
-    transform: rotate(-220deg);
-    left: 40px; }
-  .section-content .date-grid-container {
+  #section-two .section-content {
+    width: 100vw;
     display: flex;
-    width: 700px;
-    height: 500px;
-    position: relative;
-    flex-direction: column;
-    justify-content: center; }
-    .section-content .date-grid-container h2 {
-      font-family: "Playfair Display", serif; }
-    .section-content .date-grid-container .date-grid-row-top {
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    height: 100vh;
+    margin-top: -75px;
+    box-shadow: inset 0px -125px 30px #fff; }
+    #section-two .section-content .greenery.left {
+      position: absolute;
+      transform: rotate(-220deg);
+      left: 40px; }
+    #section-two .section-content .date-grid-container {
       display: flex;
-      flex-direction: row;
-      width: 100%; }
-      .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell {
-        width: 33.33%;
-        border: 1px solid #222;
+      width: 1000px;
+      height: 460px;
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: -300px; }
+      #section-two .section-content .date-grid-container h2 {
+        font-family: "Gotham";
+        font-size: 32px; }
+      #section-two .section-content .date-grid-container .date-grid-row-top {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100px; }
-        .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell h2 {
-          z-index: 1; }
-        .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell h3 {
-          font-family: "Playfair Display", serif;
-          color: #eee;
-          font-size: 72px;
-          position: absolute;
-          top: -25px;
-          z-index: 0;
-          line-height: 1; }
-        .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell.middle {
-          border-left: none;
-          border-right: none; }
-        .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell.right h3 {
-          top: -20px; }
-    .section-content .date-grid-container .date-grid-row-bottom {
-      display: flex;
-      flex-direction: row;
-      width: 100%; }
-      .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell {
-        width: 50%;
-        border: 1px solid #222;
-        height: 300px;
+        flex-direction: row;
+        width: 100%;
+        background-color: #fff; }
+        #section-two .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell {
+          width: 33.33%;
+          border: 10px solid #eee;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100px;
+          padding: 30px; }
+          #section-two .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell h2 {
+            z-index: 1; }
+          #section-two .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell h3 {
+            font-family: "Gotham";
+            color: #eee;
+            font-size: 90px;
+            top: 0px;
+            z-index: 0;
+            line-height: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+          #section-two .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell h4 {
+            position: absolute;
+            font-family: "Sacramento", cursive;
+            font-size: 50px;
+            line-height: 1;
+            margin-top: 0px;
+            color: #05352b; }
+          #section-two .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell.middle {
+            border-left: none;
+            border-right: none; }
+          #section-two .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell.right h3 {
+            top: 0px; }
+      #section-two .section-content .date-grid-container .date-grid-row-bottom {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        border-top: none;
-        flex-direction: column;
-        font-family: "Gotham"; }
-        .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell.right {
-          border-left: none; }
-        .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell h2 {
-          font-size: 36px; }
-        .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell h3 {
-          font-size: 24px;
-          font-weight: 100 !important;
-          margin: 0;
-          text-align: center; }
-        .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell h4 {
-          font-size: 18px;
-          font-weight: 300 !important;
-          margin: 15px 0;
-          text-align: center; }
+        flex-direction: row;
+        width: 100%;
+        background-color: #fff; }
+        #section-two .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell {
+          width: 50%;
+          border: 10px solid #eee;
+          height: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-top: none;
+          flex-direction: column;
+          font-family: "Gotham";
+          color: #222;
+          overflow: hidden; }
+          #section-two .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell.right {
+            border-left: none; }
+          #section-two .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell h2 {
+            font-size: 50px;
+            font-family: "Sacramento", cursive;
+            font-weight: bold;
+            margin: 10px;
+            color: #05352b; }
+          #section-two .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell h3 {
+            font-size: 24px;
+            font-weight: 100 !important;
+            margin: 0;
+            text-align: center; }
+          #section-two .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell h4 {
+            font-size: 18px;
+            font-weight: 300 !important;
+            margin: 15px 0;
+            text-align: center; }
+
+.details-image {
+  max-width: 425px;
+  position: absolute;
+  right: 6%;
+  margin-top: 11%;
+  border: 5px solid #05352b; }
+
+.backround-accent-details {
+  height: 700px;
+  width: 90%;
+  background-color: #eee;
+  position: absolute;
+  z-index: 0;
+  margin-top: -40px; }
 
 #section-three {
   min-height: 100vh;
@@ -400,3 +469,7 @@ select:focus {
 #section-five {
   min-height: 100vh;
   max-height: 100vh; }
+
+#section-six {
+  max-height: 100vh;
+  min-height: 100vh; }

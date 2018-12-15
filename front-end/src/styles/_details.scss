@@ -1,12 +1,18 @@
 #section-two {
   max-height: 100vh;
   min-height: 100vh;
-}
+
 .section-content {
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  // background-image: url('./images/floral.png');
+  background-size: 100%;
+  height: 100vh;
+  margin-top: -75px;
+  box-shadow: inset 0px -125px 30px #fff;
+
   .greenery.left {
     position: absolute;
     transform: rotate(-220deg);
@@ -14,36 +20,50 @@
   }
   .date-grid-container {
     display: flex;
-    width: 700px;
-    height: 500px;
+    width: 1000px;
+    height: 460px;
     position: relative;
     flex-direction: column;
     justify-content: center;
+    margin-left: -300px;
     h2 {
-      font-family: $playfair;
+      font-family: $gotham;
+      font-size: 32px;
     }
     .date-grid-row-top {
       display: flex;
       flex-direction: row;
       width: 100%;
+      background-color: $white;
       .date-grid-top-cell {
         width: 33.33%;
-        border: 1px solid $black;
+        border: 10px solid #eee;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100px;
+        padding: 30px;
         h2 {
           z-index: 1;
         }
         h3 {
-          font-family: $playfair;
+          font-family: $gotham;
           color: $gray;
-          font-size: 72px;
-          position: absolute;
-          top: -25px;
+          font-size: 90px;
+          top: 0px;
           z-index: 0;
           line-height: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        h4 {
+          position: absolute;
+          font-family: $sacramento;
+          font-size: 50px;
+          line-height: 1;
+          margin-top: 0px;
+          color: $green;
         }
         &.middle {
           border-left: none;
@@ -51,7 +71,7 @@
         }
         &.right {
           h3 {
-            top: -20px
+            top: 0px
           }
         }
       }
@@ -60,9 +80,10 @@
       display: flex;
       flex-direction: row;
       width: 100%;
+      background-color: $white;
       .date-grid-bottom-cell {
         width: 50%;
-        border: 1px solid $black;
+        border: 10px solid #eee;
         height: 300px;
         display: flex;
         justify-content: center;
@@ -70,11 +91,17 @@
         border-top: none;
         flex-direction: column;
         font-family: $gotham;
+        color: $black;
+        overflow: hidden;
         &.right {
           border-left: none;
         }
         h2 {
-          font-size: 36px;
+          font-size: 50px;
+          font-family: $sacramento;
+          font-weight: bold;
+          margin: 10px;
+          color: $green;
         }
         h3 {
           font-size: 24px;
@@ -91,4 +118,22 @@
       }
     }
   }
+}
+}
+
+.details-image {
+  max-width: 425px;
+  position: absolute;
+  right: 6%;
+  margin-top: 11%;
+  border: 5px solid $green;
+}
+
+.backround-accent-details {
+height: 700px;
+width: 90%;
+background-color: #eee;
+position: absolute;
+z-index: 0;
+margin-top: -40px;
 }

@@ -11,7 +11,7 @@ export default class WeddingParty extends Component {
         <ScrollableAnchor id={'wedding-party'}>
           <div id="section-three">
             <div className="section-title">
-              <h2>Wedding Party</h2>
+              <h2>wedding party</h2>
             </div>
             <PeopleSlider />
           </div>
