@@ -2,23 +2,26 @@
 
 
 
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import ScrollableAnchor from 'react-scrollable-anchor'
+import ScrollableAnchor from 'react-scrollable-anchor';
 
-import Iframe from 'react-iframe'
+import Iframe from 'react-iframe';
+
+import { Row, Col } from 'react-flexbox-grid';
+
 
 
 
 export default class Rsvpify extends Component {
     render() {
       return (
-        <div>
           <ScrollableAnchor id={'rsvp'}>
-            <div id="section-six">
-            <div className="section-title">
+          <div>
+          <Row className="rsvp">
+            <Col xs={12} className="section-title invert">
               <h2>rsvp</h2>
-            </div>
+            </Col>
             <Iframe url="https://weddingmelz.app.rsvpify.com/"
             width="100vw"
             height="100vh"
@@ -26,10 +29,10 @@ export default class Rsvpify extends Component {
             display="initial"
             position="relative"
             allowFullScreen/>
-            </div>
-            
+            </Row>
+          </div>
+
           </ScrollableAnchor>
-        </div>
       )
     }
 

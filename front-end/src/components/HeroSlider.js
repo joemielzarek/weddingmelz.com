@@ -7,8 +7,6 @@ import Slide2 from "../images/slide_2.jpg";
 import Slide3 from "../images/slide_3.jpg";
 import Slide4 from "../images/slide_4.jpg";
 import Slide5 from "../images/slide_5.jpg";
-import Slide6 from "../images/slide_6.jpg";
-import Slide7 from "../images/slide_7.jpg";
 
 
 
@@ -35,8 +33,6 @@ export default class HeroSlider extends Component {
         <img src={Slide3} alt="Joe and Bailey" />
         <img src={Slide4} alt="Joe and Bailey" />
         <img src={Slide5} alt="Joe and Bailey" />
-        <img src={Slide6} alt="Joe and Bailey" />
-        <img src={Slide7} alt="Joe and Bailey" />
         </Slider>
       </div>
     );

@@ -2,3 +2,75 @@
   min-height: 100vh;
   max-height: 100vh;
 }
+
+.column-container-registry {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .column {
+    max-height: 200px;
+    width: 300px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    &.col-1 {
+      border-top: 1px solid $black;
+      padding-top: 30px;
+      position: relative;
+      &:before {
+        content:"";
+        height: 100px;
+        width: 1px;
+        background: $black;
+        display: block;
+        position: absolute;
+        bottom: 100%;
+      }
+    }
+    &.col-3 {
+      border-bottom: 1px solid $black;
+      padding-bottom: 30px;
+      position: relative;
+      &:after {
+        content:"";
+        height: 100px;
+        width: 1px;
+        background: $black;
+        display: block;
+        position: absolute;
+        top: 100%;
+      }
+    }
+    .registry-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.first {
+        width: 300px;
+      }
+      &.second {
+        height: auto;
+        width: 100px;
+      }
+      &.third {
+        width: 500px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .column-container-registry .column .registry-logo.third {
+    max-width: 280px;
+  }
+
+  .steps_container_shrinker {
+    width: auto !important;
+  }
+
+}

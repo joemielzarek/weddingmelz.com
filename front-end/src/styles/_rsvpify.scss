@@ -1,4 +1,15 @@
-#section-six {
-  max-height: 100vh;
-  min-height: 100vh;
+
+.rsvp {
+  background-color: $ice;
+  .invert {
+    filter: grayscale(100) brightness(0) invert(100);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+ .rsvp {
+   .invert {
+     filter: invert(0);
+   }
+ }
 }

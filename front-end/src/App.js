@@ -9,7 +9,7 @@ import Intro from './components/Intro';
 import Story from './components/Story';
 import Details from './components/Details';
 import WeddingParty from './components/WeddingParty';
-import Accomodations from './components/Accomodations';
+import Accommodations from './components/Accommodations';
 import Registry from './components/Registry';
 import Rsvpify from './components/Rsvpify';
 
@@ -26,7 +26,7 @@ class App extends Component {
       <Story/>
       <Details/>
       <WeddingParty/>
-      <Accomodations/>
+      <Accommodations/>
       <Registry/>
       <Rsvpify/>
       </ParallaxProvider>

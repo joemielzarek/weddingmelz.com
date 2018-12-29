@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import ScrollableAnchor from 'react-scrollable-anchor'
-import { Parallax } from 'react-scroll-parallax';
+import ScrollableAnchor from 'react-scrollable-anchor';
+import { Row, Col } from 'react-flexbox-grid';
 
 
 import logoAlt from '../images/logo.svg';
@@ -8,44 +8,36 @@ import Greenery from '../images/greenery.png';
 import Us from '../images/details-image.jpg';
 
 
-
-
-
-
 export default class Story extends Component {
   render() {
     return (
-      <div>
         <ScrollableAnchor id={'our-story'}>
-          <div id="section-one">
-          <div className="section-title">
-          <h2>our story</h2>
-          </div>
-          <div className="section-content">
-          <div className="column column-1">
-          <div className="gradient-container">
-          <Parallax  offsetYMax={0} offsetYMin={-30} >
-          <img src={Us} alt="joe and bailey"/>
-        </Parallax>
-        <div className="text-container">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
+          <div>
+            <Row>
+            <Col xs={12}>
+              <div className="section-title first"><h2>our story</h2></div>
+              <Col xs={12} className="section-content">
+              <Col xs={8}>
+                  <div className="gradient-container">
+                    <img src={Us} alt="joe and bailey"/>
+                    <div className="text-container">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                  </div>
+                </Col>
+                <Col xs={4}>
+                  <img className="circle-logo" src={logoAlt} alt="logo" />
+                  <img className="greenery right" src={Greenery} alt="greenery" />
+                </Col>
+              </Col>
 
+            </Col>
+            </Row>
           </div>
-          </div>
-          <div className="column column-2">
-          <img className="circle-logo" src={logoAlt} alt="logo" />
-          <img className="greenery right" src={Greenery} alt="greenery" />
-          </div>
-          </div>
-
-
-          </div>
-        </ScrollableAnchor>
-      </div>
+      </ScrollableAnchor>
     )
   }
 }

@@ -31,7 +31,7 @@ class Navigation extends Component {
                 <a href='/#wedding-party'> Wedding Party </a>
               </li>
               <li>
-                <a href='/#accomodations'> Accomodations </a>
+                <a href='/#accommodations'> accommodations </a>
               </li>
               <li>
                 <a href='/#registry'> Registry </a>
