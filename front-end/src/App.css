@@ -281,7 +281,6 @@ select:focus {
     position: relative;
     z-index: 1; }
     .section-title.first {
-      background: linear-gradient(#cbefff, #fff);
       margin: 0 !important; }
       .section-title.first h2 {
         margin: 0; }
@@ -292,7 +291,6 @@ select:focus {
   .call-to-action {
     height: unset;
     position: relative;
-    background-color: #cbefff;
     padding: 20px 0px 40px 0px;
     margin-top: -5px;
     border-top: 2px solid black; }
@@ -364,7 +362,8 @@ select:focus {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    position: relative; }
+    position: relative;
+    padding: 25px 0px; }
     .row .section-content .gradient-container {
       height: 100% !important;
       width: auto !important;
@@ -374,7 +373,7 @@ select:focus {
       .row .section-content .gradient-container img {
         display: none !important; }
       .row .section-content .gradient-container .text-container {
-        max-width: initial !important;
+        max-width: 200px !important;
         padding: 5px;
         padding-top: 0px;
         font-size: 10px;
@@ -382,19 +381,24 @@ select:focus {
         z-index: 999; }
     .row .section-content .col-xs-4 {
       min-height: 100px;
-      width: 100vw; }
+      width: 100vw;
+      max-width: 100%; }
       .row .section-content .col-xs-4 .circle-logo {
         width: 100px;
         height: 100px;
         width: 100px;
         height: 100px;
         position: absolute;
-        margin: 0 auto; }
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%); }
       .row .section-content .col-xs-4 .greenery.right {
         position: absolute;
         max-height: 100%;
         top: 0;
-        opacity: .6; }
+        opacity: .6;
+        left: 50%;
+        transform: translateX(-50%); }
   #section-one {
     height: auto !important; } }
 
@@ -443,7 +447,8 @@ select:focus {
         font-size: 50px;
         line-height: 1;
         margin-top: 0px;
-        color: #05352b; }
+        color: #05352b;
+        font-weight: normal; }
     .row .section-content .date-grid-container .date-grid-row-top {
       display: flex;
       flex-direction: row;
@@ -475,7 +480,8 @@ select:focus {
           font-size: 50px;
           line-height: 1;
           margin-top: 0px;
-          color: #05352b; }
+          color: #05352b;
+          font-weight: normal; }
         .row .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell.middle {
           border-left: none;
           border-right: none; }
@@ -512,7 +518,7 @@ select:focus {
         .row .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell h2 {
           font-size: 50px;
           font-family: "Sacramento", cursive;
-          font-weight: bold;
+          font-weight: normal;
           margin: 10px;
           color: #05352b; }
         .row .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell h3 {
@@ -558,22 +564,29 @@ select:focus {
     height: 100% !important;
     overflow: hidden; }
   .details-image-flowers, .details-image {
-    display: none; }
-  .date-grid-container .date-grid-row-top {
-    flex-direction: column !important;
-    display: none !important; }
-    .date-grid-container .date-grid-row-top .date-grid-top-cell {
-      width: 100% !important;
-      border: none !important;
-      padding: 10px 0px !important; }
-  .date-grid-container .date-grid-row-bottom {
-    flex-direction: column !important; }
-    .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell {
-      width: 100% !important;
-      border: none !important; }
-      .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell p {
-        line-height: 1;
-        text-align: center; }
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 100px; }
+  .details-image {
+    max-width: 200px; }
+  .date-grid-container {
+    margin-top: -50px; }
+    .date-grid-container .date-grid-row-top {
+      flex-direction: column !important;
+      display: none !important; }
+      .date-grid-container .date-grid-row-top .date-grid-top-cell {
+        width: 100% !important;
+        border: none !important;
+        padding: 10px 0px !important; }
+    .date-grid-container .date-grid-row-bottom {
+      flex-direction: column !important; }
+      .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell {
+        width: 100% !important;
+        border: none !important; }
+        .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell p {
+          line-height: 1;
+          text-align: center; }
   #section-two .section-content {
     margin-top: 0;
     height: 100%; }
@@ -678,7 +691,10 @@ select:focus {
     margin-top: -280px;
     font-family: "Sacramento", cursive;
     font-size: 30px;
-    color: #222; }
+    color: #222;
+    font-weight: normal; }
+    .column-container .hotel-banner h3 {
+      font-weight: normal; }
   .column-container .col-xs-2 {
     height: 75%;
     width: 300px;
@@ -722,11 +738,13 @@ select:focus {
       position: relative;
       margin-top: 0px;
       line-height: 1;
-      text-align: center; }
+      text-align: center;
+      font-weight: normal; }
+      .row .column-container .hotel-banner h3 {
+        font-weight: normal; }
     .row .column-container .col-xs-2 {
-      height: 100vh;
+      min-height: 500px;
       width: 285px !important;
-      max-height: 490px !important;
       flex-basis: 285px !important;
       max-width: 286px; } }
 
@@ -797,5 +815,7 @@ select:focus {
     filter: grayscale(100) brightness(0) invert(100); }
 
 @media only screen and (max-width: 1024px) {
-  .rsvp .invert {
-    filter: invert(0); } }
+  .rsvp {
+    background-color: #fff; }
+    .rsvp .invert {
+      filter: invert(0); } }

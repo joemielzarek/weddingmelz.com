@@ -52,6 +52,7 @@
           line-height: 1;
           margin-top: 0px;
           color: $green;
+          font-weight: normal;
         }
     }
     .date-grid-row-top {
@@ -88,6 +89,7 @@
           line-height: 1;
           margin-top: 0px;
           color: $green;
+          font-weight: normal;
         }
         &.middle {
           border-left: none;
@@ -135,7 +137,7 @@
         h2 {
           font-size: 50px;
           font-family: $sacramento;
-          font-weight: bold;
+          font-weight: normal;
           margin: 10px;
           color: $green;
         }
@@ -196,9 +198,16 @@ margin-top: -40px;
     overflow: hidden;
   }
   .details-image-flowers, .details-image {
-    display: none;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 100px;
+  }
+  .details-image {
+    max-width: 200px;
   }
   .date-grid-container {
+    margin-top: -50px;
     .date-grid-row-top {
       flex-direction: column !important;
       display: none !important;

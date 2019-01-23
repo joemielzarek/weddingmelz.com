@@ -92,7 +92,7 @@ export default class PeopleSlider extends Component {
         <div className="people-slide hers">
         <div className="people-image-container"><img src={Aria} alt="Molly"/></div>
           <div className="name-holder">
-            <h3>Aria Rochelle</h3>
+            <h3>Aria Nelson</h3>
             <p>Bridesmaid</p>
           </div>
         </div>

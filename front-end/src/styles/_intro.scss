@@ -69,7 +69,7 @@
     position: relative;
     z-index: 1;
     &.first {
-      background: linear-gradient(#cbefff, #fff);
+      // background: linear-gradient(#cbefff, #fff);
       margin: 0 !important;
       h2 {
         margin: 0;
@@ -85,7 +85,7 @@
   .call-to-action {
     height: unset;
     position: relative;
-    background-color: $ice;
+    // background-color: $ice;
     padding: 20px 0px 40px 0px;
     margin-top: -5px;
     border-top: 2px solid black;
