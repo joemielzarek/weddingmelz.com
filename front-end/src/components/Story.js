@@ -21,10 +21,7 @@ export default class Story extends Component {
                   <div className="gradient-container">
                     <img src={Us} alt="joe and bailey"/>
                     <div className="text-container">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      <p>Keep Your Eyes On the Stars, But Your Feet On the Ground. </p>
                     </div>
                   </div>
                 </Col>
