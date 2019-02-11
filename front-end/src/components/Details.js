@@ -4,7 +4,6 @@ import { Row, Col } from 'react-flexbox-grid';
 
 
 import UsECC from '../images/ecc-image.JPG';
-import leftFlowers from '../images/flowers.png';
 
 
 export default class Details extends Component {
@@ -53,7 +52,6 @@ export default class Details extends Component {
       </Col>
       <Col xs={4}>
       <img className="details-image" src={UsECC} alt="joe and bailey"/>
-      <img className="details-image-flowers" src={leftFlowers} alt="joe and bailey"/>
       </Col>
     </Col>
 
