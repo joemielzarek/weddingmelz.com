@@ -40,13 +40,13 @@ export default class Details extends Component {
             <h2>ceremony</h2>
             {/* <h3>4 o'clock in the afternoon</h3> */}
             <h4>Colonial Church<br />6200 Colonial Way<br />Edina, MN 55436</h4>
-            <p><a href="https://goo.gl/maps/tPrAnLU4A692" rel="noopener noreferrer" target="_blank">directions to colonial</a></p>
+            <p><a href="https://goo.gl/maps/tPrAnLU4A692" rel="noopener noreferrer" target="_blank">Directions</a></p>
             </div>
             <div className="date-grid-bottom-cell right">
             <h2>reception</h2>
             {/* <h3>5 o'clock, following ceremony</h3> */}
             <h4>Edina Country Club<br />5100 Wooddale Ave.<br /> Edina, MN 55424</h4>
-            <p><a href="https://goo.gl/maps/BJAjWJFLiiw" rel="noopener noreferrer" target="_blank">directions to ecc</a></p>
+            <p><a href="https://goo.gl/maps/BJAjWJFLiiw" rel="noopener noreferrer" target="_blank">Directions</a></p>
             </div>
           </div>
       </div>

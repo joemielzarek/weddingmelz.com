@@ -120,12 +120,18 @@
         color: $black;
         overflow: hidden;
         a {
-          font-family: $sacramento;
-          font-size: 30px;
-          color: $ice;
+
+          font-family: "Lato", sans-serif;
+          font-size: 18px;
+          font-weight: bold;
+          border: 1px solid #cbefff;
+          background-color: #cbefff;
+          min-height: 40px;
+          color: $green;
+          padding: 10px 20px;
           text-decoration: none;
           &:visited {
-            color: $ice;
+            color: $green;
           }
           &:hover {
             border-bottom: 1px solid $ice;
