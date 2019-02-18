@@ -28,7 +28,6 @@ class App extends Component {
       <WeddingParty/>
       <Accommodations/>
       <Registry/>
-      <Rsvpify/>
       </ParallaxProvider>
     );
   }
