@@ -3,10 +3,6 @@
   max-height: 100vh;
 }
 
-.slick-people-section {
-  .slick-slider {
-  }
-}
 .people-slide {
   height: 300px;
   background: $ice;
@@ -64,11 +60,6 @@
   width: 400px;
 }
 
-// img {
-//   transform: skewX(15deg);
-
-// }
-
 .people-image-container {
   width: 120px;
   height: 120px;
@@ -81,29 +72,20 @@
   margin-right: 15px;
   img {
     height: 100%;
-
   }
 }
-
-
 
 @media only screen and (max-width: 1024px) {
   .people-slide {
     border-width: 5px;
     flex-direction: column;
-    // transform: none !important;
-    .people-image-container {
-      // transform: none !important;
-    }
     .name-holder {
       margin-top: 20px;
       h3 {
         font-size: 20px;
-        // transform: none !important;
       }
       p {
         font-size: 14px;
-        // transform: none !important;
       }
     }
   }

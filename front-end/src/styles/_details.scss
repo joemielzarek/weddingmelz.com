@@ -1,254 +1,249 @@
 .row {
- 
-
-.section-content {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // background-image: url('./images/floral.png');
-  background-size: 100%;
-  box-shadow: inset 0px -125px 30px #fff;
-
-  .greenery.left {
-    position: absolute;
-    transform: rotate(-220deg);
-  }
-  .date-grid-container {
-    display: flex;
+  .section-content {
     width: 100%;
-    position: relative;
-    flex-direction: column;
+    display: flex;
     justify-content: center;
-    z-index: 1;
-    h2 {
-      font-family: $gotham;
-      font-size: 32px;
+    align-items: center;
+    background-size: 100%;
+    box-shadow: inset 0px -125px 30px #fff;
+  
+    .greenery.left {
+      position: absolute;
+      transform: rotate(-220deg);
     }
-    .date-grid-banner {
-      border: 10px solid #eee;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-        padding: 30px;
-        border-bottom: none;
-        background-color: rgba($white, 1);
-        h3 {
-          font-family: $gotham;
-          color: $gray;
-          font-size: 90px;
-          top: 0px;
-          z-index: 0;
-          line-height: 1;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        h4 {
-          position: absolute;
-          font-family: $sacramento;
-          font-size: 50px;
-          line-height: 1;
-          margin-top: 0px;
-          color: $green;
-          font-weight: normal;
-        }
-    }
-    .date-grid-row-top {
+    .date-grid-container {
       display: flex;
-      flex-direction: row;
       width: 100%;
-      background-color: rgba($white, 1);
-      .date-grid-top-cell {
-        width: 33.33%;
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 1;
+      h2 {
+        font-family: $gotham;
+        font-size: 32px;
+      }
+      .date-grid-banner {
         border: 10px solid #eee;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-        padding: 30px;
-        h2 {
-          z-index: 1;
-        }
-        h3 {
-          font-family: $gotham;
-          color: $gray;
-          font-size: 90px;
-          top: 0px;
-          z-index: 0;
-          line-height: 1;
           display: flex;
           justify-content: center;
           align-items: center;
-        }
-        h4 {
-          position: absolute;
-          font-family: $sacramento;
-          font-size: 50px;
-          line-height: 1;
-          margin-top: 0px;
-          color: $green;
-          font-weight: normal;
-        }
-        &.middle {
-          border-left: none;
-          border-right: none;
-        }
-        &.right {
+          height: 100px;
+          padding: 30px;
+          border-bottom: none;
+          background-color: rgba($white, 1);
           h3 {
-            top: 0px
+            font-family: $gotham;
+            color: $gray;
+            font-size: 90px;
+            top: 0px;
+            z-index: 0;
+            line-height: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          h4 {
+            position: absolute;
+            font-family: $sacramento;
+            font-size: 50px;
+            line-height: 1;
+            margin-top: 0px;
+            color: $green;
+            font-weight: normal;
+          }
+      }
+      .date-grid-row-top {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: rgba($white, 1);
+        .date-grid-top-cell {
+          width: 33.33%;
+          border: 10px solid #eee;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100px;
+          padding: 30px;
+          h2 {
+            z-index: 1;
+          }
+          h3 {
+            font-family: $gotham;
+            color: $gray;
+            font-size: 90px;
+            top: 0px;
+            z-index: 0;
+            line-height: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          h4 {
+            position: absolute;
+            font-family: $sacramento;
+            font-size: 50px;
+            line-height: 1;
+            margin-top: 0px;
+            color: $green;
+            font-weight: normal;
+          }
+          &.middle {
+            border-left: none;
+            border-right: none;
+          }
+          &.right {
+            h3 {
+              top: 0px
+            }
           }
         }
       }
-    }
-    .date-grid-row-bottom {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      background-color: rgba($white, 1);
-      .date-grid-bottom-cell {
-        width: 50%;
-        border: 10px solid #eee;
-        height: 300px;
+      .date-grid-row-bottom {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        border-top: none;
-        flex-direction: column;
-        font-family: $gotham;
-        color: $black;
-        overflow: hidden;
-        a {
-
-          font-family: "Lato", sans-serif;
-          font-size: 18px;
-          font-weight: bold;
-          border: 1px solid #cbefff;
-          background-color: #cbefff;
-          min-height: 40px;
-          color: $green;
-          padding: 10px 20px;
-          text-decoration: none;
-          &:visited {
+        flex-direction: row;
+        width: 100%;
+        background-color: rgba($white, 1);
+        .date-grid-bottom-cell {
+          width: 50%;
+          border: 10px solid #eee;
+          height: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-top: none;
+          flex-direction: column;
+          font-family: $gotham;
+          color: $black;
+          overflow: hidden;
+          a {
+            font-family: $gotham, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            border: 1px solid $ice;
+            background-color: $ice;
+            min-height: 40px;
+            color: $green;
+            padding: 10px 20px;
+            text-decoration: none;
+            &:visited {
+              color: $green;
+            }
+            &:hover {
+              border-bottom: 1px solid $ice;
+            }
+          }
+          &.right {
+            border-left: none;
+          }
+          h2 {
+            font-size: 50px;
+            font-family: $sacramento;
+            font-weight: normal;
+            margin: 10px;
             color: $green;
           }
-          &:hover {
-            border-bottom: 1px solid $ice;
+          h3 {
+            font-size: 24px;
+            font-weight: 100 !important;
+            margin: 0;
+            text-align: center;
+          }
+          h4 {
+            font-size: 18px;
+            font-weight: 300 !important;
+            margin: 15px 0;
+            text-align: center;
           }
         }
-        &.right {
-          border-left: none;
-        }
-        h2 {
-          font-size: 50px;
-          font-family: $sacramento;
-          font-weight: normal;
-          margin: 10px;
-          color: $green;
-        }
-        h3 {
-          font-size: 24px;
-          font-weight: 100 !important;
-          margin: 0;
-          text-align: center;
-        }
-        h4 {
-          font-size: 18px;
-          font-weight: 300 !important;
-          margin: 15px 0;
-          text-align: center;
-        }
       }
     }
   }
-}
-}
-
-.details-image {
-  max-width: 70%;
-  position: relative;
-  border: 10px solid $green;
-  z-index: 0;
-}
-
-.backround-accent-details {
-height: 700px;
-width: 90%;
-background-color: #eee;
-position: absolute;
-z-index: 0;
-margin-top: -40px;
-}
-
-.details-image-flowers {
-  max-width: 400px;
-  position: absolute;
-  right: 16%;
-  margin-top: 18%;
-  z-index: 9;
-}
-
-
-
-@media only screen and (max-width: 1024px) {
-  #section-two .section-content .date-grid-container {
-    width: 100%;
-    margin: 0;
-    height: auto;
   }
-  #section-two, #section-one, #section-three, #section-four, #section-five {
-    min-height: 0px !important;
-    max-height: 100% !important;
-    height: 100% !important;
-    overflow: hidden;
-  }
-  .details-image-flowers, .details-image {
-    margin: 0 auto;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 100px;
-  }
+
   .details-image {
-    max-width: 200px;
+    max-width: 70%;
+    position: relative;
+    border: 10px solid $green;
+    z-index: 0;
   }
-  .date-grid-container {
-    margin-top: -50px;
-    .date-grid-row-top {
-      flex-direction: column !important;
-      display: none !important;
-      .date-grid-top-cell {
-        width: 100% !important;
-        border: none !important;
-        padding: 10px 0px !important;
-      }
+
+  .backround-accent-details {
+  height: 700px;
+  width: 90%;
+  background-color: #eee;
+  position: absolute;
+  z-index: 0;
+  margin-top: -40px;
+  }
+
+  .details-image-flowers {
+    max-width: 400px;
+    position: absolute;
+    right: 16%;
+    margin-top: 18%;
+    z-index: 9;
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+    #section-two .section-content .date-grid-container {
+      width: 100%;
+      margin: 0;
+      height: auto;
     }
-    .date-grid-row-bottom {
-      flex-direction: column !important;
-      .date-grid-bottom-cell {
-        width: 100% !important;
-        border: none !important;
-        p {
-          line-height: 1;
-          text-align: center;
+    #section-two, #section-one, #section-three, #section-four, #section-five {
+      min-height: 0px !important;
+      max-height: 100% !important;
+      height: 100% !important;
+      overflow: hidden;
+    }
+    .details-image-flowers, .details-image {
+      margin: 0 auto;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 100px;
+    }
+    .details-image {
+      max-width: 200px;
+    }
+    .date-grid-container {
+      margin-top: -50px;
+      .date-grid-row-top {
+        flex-direction: column !important;
+        display: none !important;
+        .date-grid-top-cell {
+          width: 100% !important;
+          border: none !important;
+          padding: 10px 0px !important;
+        }
+      }
+      .date-grid-row-bottom {
+        flex-direction: column !important;
+        .date-grid-bottom-cell {
+          width: 100% !important;
+          border: none !important;
+          p {
+            line-height: 1;
+            text-align: center;
+          }
         }
       }
     }
-  } 
-  #section-two {
-    .section-content {
-      margin-top: 0;
-      height: 100%;
+    #section-two {
+      .section-content {
+        margin-top: 0;
+        height: 100%;
+      }
+    }
+    .date-grid-banner {
+      border: none !important;
+      display: none !important;
+      h3 {
+        font-size: 40px !important;
+      }
+      h4 {
+        text-align: center;
+      }
     }
   }
-  .date-grid-banner {
-    border: none !important;
-    display: none !important;
-    h3 {
-      font-size: 40px !important;
-    }
-    h4 {
-      text-align: center;
-    }
-  }
-}

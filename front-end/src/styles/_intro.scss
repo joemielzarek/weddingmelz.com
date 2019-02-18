@@ -13,7 +13,7 @@
   .cta-description {
     border-right: none;
     height: 250px;
-    font-family: Lato,sans-serifnpm;
+    font-family: $gotham, sans-serif;
     text-transform: uppercase;
     color: $white;
     font-weight: 700;
@@ -24,7 +24,7 @@
     flex-direction: column;
     padding: 0 30px;
     h3 {
-      font-family: 'Sacramento', cursive;
+      font-family: $sacramento, cursive;
       text-transform: lowercase;
       font-weight: 100;
       font-size: 48px;
@@ -65,7 +65,6 @@
     position: relative;
     z-index: 1;
     &.first {
-      // background: linear-gradient(#cbefff, #fff);
       margin: 0 !important;
       h2 {
         margin: 0;
@@ -79,20 +78,19 @@
     }
   }
   .call-to-action {
-    height: unset;
+    height: auto;
     position: relative;
-    // background-color: $ice;
     padding: 20px 0px 40px 0px;
     margin-top: -5px;
     border-top: 2px solid black;
+    bottom: 0;
     .cta-description {
       width: 90%;
       border: none;
       height: unset;
       align-items: center;
-      filter: invert(100%);
+      color: black;
       h3 {
-        // font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
         font-size: calc(20px + (48 - 20) * ((100vw - 300px) / (1200 - 300)));
       }
       p, button {

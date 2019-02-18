@@ -1,14 +1,17 @@
 //Font
 $gotham: "Lato", sans-serif;
 $playfair: "Playfair Display", serif;
-$sacramento: 'Sacramento', cursive;
+
+// $sacramento: 'Sacramento', cursive;
+$sacramento: 'delight-script-alt', cursive;
+
 
 //Color
 $white: #fff;
 $ice: #cbefff;
 $navy: #003366;
 $green: #05352b;
-$pink: pink; 
+$pink: pink;
 $black: #222;
 $gray: #eee;
 
@@ -20,12 +23,12 @@ body {
 
 button {
   padding: 10px 30px;
-    background: rgba(255, 255, 255, 0.4);
-    color: $white;
-    border: none;
-    text-transform: unset;
-    font-family: "gotham";
-    font-size: 12px;
+  background: rgba(255, 255, 255, 0.4);
+  color: $white;
+  border: none;
+  text-transform: unset;
+  font-family: "gotham";
+  font-size: 12px;
 }
 
 
@@ -37,14 +40,18 @@ button {
   max-height: calc(100vw * (9/16));
   overflow: hidden;
   margin: 0 !important;
-  @media only screen and (max-width: 1024px) { }
+
+  @media only screen and (max-width: 1024px) {}
+
   height: auto !important;
   max-height: initial !important;
   min-height: initial !important;
   overflow: hidden !important;
+
   .col-xs-12 {
     padding: 0;
   }
+
   .slick-section {
     width: 100vw;
   }
@@ -56,12 +63,14 @@ button {
   font-size: 32px;
   padding-top: 40px;
   width: 100vw;
+
   h2 {
     border: none;
     color: $ice;
     font-weight: normal;
     display: flex;
     align-items: center;
+
     &:before {
       content: '';
       border-top: 2px solid $ice;
@@ -72,6 +81,7 @@ button {
       // margin-left: 15px;
       border-radius: 4px;
     }
+
     &:after {
       content: '';
       border-top: 2px solid $ice;
@@ -85,4 +95,24 @@ button {
       border-radius: 4px;
     }
   }
+}
+
+@font-face {
+	font-family: "delight-sans";
+  src: url("fonts/delight-sans.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "delight-script-alt";
+  src: url("fonts/delight-script-alt.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "delight-script";
+  src: url("fonts/delight-script.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "delight-serif";
+  src: url("fonts/delight-serif.otf") format("opentype");
 }

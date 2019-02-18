@@ -30,7 +30,7 @@ button {
     width: 100vw; }
 
 .section-title {
-  font-family: "Sacramento", cursive;
+  font-family: "delight-script-alt", cursive;
   font-size: 32px;
   padding-top: 40px;
   width: 100vw; }
@@ -57,6 +57,22 @@ button {
       align-items: center;
       margin-left: 15px;
       border-radius: 4px; }
+
+@font-face {
+  font-family: "delight-sans";
+  src: url("fonts/delight-sans.otf") format("opentype"); }
+
+@font-face {
+  font-family: "delight-script-alt";
+  src: url("fonts/delight-script-alt.otf") format("opentype"); }
+
+@font-face {
+  font-family: "delight-script";
+  src: url("fonts/delight-script.otf") format("opentype"); }
+
+@font-face {
+  font-family: "delight-serif";
+  src: url("fonts/delight-serif.otf") format("opentype"); }
 
 fieldset {
   background-color: transparent;
@@ -237,7 +253,7 @@ select:focus {
   .call-to-action .cta-description {
     border-right: none;
     height: 250px;
-    font-family: Lato,sans-serifnpm;
+    font-family: "Lato", sans-serif, sans-serif;
     text-transform: uppercase;
     color: #fff;
     font-weight: 700;
@@ -248,7 +264,7 @@ select:focus {
     flex-direction: column;
     padding: 0 30px; }
     .call-to-action .cta-description h3 {
-      font-family: 'Sacramento', cursive;
+      font-family: "delight-script-alt", cursive, cursive;
       text-transform: lowercase;
       font-weight: 100;
       font-size: 48px;
@@ -288,17 +304,18 @@ select:focus {
       .section-title h2:before, .section-title h2:after {
         border-color: #222; }
   .call-to-action {
-    height: unset;
+    height: auto;
     position: relative;
     padding: 20px 0px 40px 0px;
     margin-top: -5px;
-    border-top: 2px solid black; }
+    border-top: 2px solid black;
+    bottom: 0; }
     .call-to-action .cta-description {
       width: 90%;
       border: none;
       height: unset;
       align-items: center;
-      filter: invert(100%); }
+      color: black; }
       .call-to-action .cta-description h3 {
         font-size: calc(20px + (48 - 20) * ((100vw - 300px) / (1200 - 300))); }
       .call-to-action .cta-description p, .call-to-action .cta-description button {
@@ -444,7 +461,7 @@ select:focus {
         align-items: center; }
       .row .section-content .date-grid-container .date-grid-banner h4 {
         position: absolute;
-        font-family: "Sacramento", cursive;
+        font-family: "delight-script-alt", cursive;
         font-size: 50px;
         line-height: 1;
         margin-top: 0px;
@@ -477,7 +494,7 @@ select:focus {
           align-items: center; }
         .row .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell h4 {
           position: absolute;
-          font-family: "Sacramento", cursive;
+          font-family: "delight-script-alt", cursive;
           font-size: 50px;
           line-height: 1;
           margin-top: 0px;
@@ -506,7 +523,7 @@ select:focus {
         color: #222;
         overflow: hidden; }
         .row .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell a {
-          font-family: "Lato", sans-serif;
+          font-family: "Lato", sans-serif, sans-serif;
           font-size: 18px;
           font-weight: bold;
           border: 1px solid #cbefff;
@@ -523,7 +540,7 @@ select:focus {
           border-left: none; }
         .row .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell h2 {
           font-size: 50px;
-          font-family: "Sacramento", cursive;
+          font-family: "delight-script-alt", cursive;
           font-weight: normal;
           margin: 10px;
           color: #05352b; }
@@ -695,7 +712,7 @@ select:focus {
   .column-container .hotel-banner {
     position: absolute;
     margin-top: -280px;
-    font-family: "Sacramento", cursive;
+    font-family: "delight-script-alt", cursive;
     font-size: 30px;
     color: #222;
     font-weight: normal; }
@@ -720,7 +737,7 @@ select:focus {
       color: pink; }
     .column-container .col-xs-2 h5 {
       font-size: 24px;
-      font-family: "Sacramento", cursive; }
+      font-family: "delight-script-alt", cursive; }
       .column-container .col-xs-2 h5 span {
         font-size: 28px;
         font-family: "Lato", sans-serif; }
