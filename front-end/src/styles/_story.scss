@@ -21,9 +21,8 @@
         img {
           width: 400px;
           height: 600px;
-          background: $black;
-          border: 8px solid $white;
-          border-bottom: 0;
+          background: $gold;
+          border: 8px solid $gold;
           display: block;
           position: relative;
           margin-bottom: -150px;
@@ -31,8 +30,9 @@
         }
         .text-container {
           max-width: 25vw;
-          color: $black;
-          font-family: $gotham
+          color: #efefef;
+          font-family: $gotham;
+          text-shadow: 1px 1px 0px #648e91a4;
         }
       }
     
@@ -40,11 +40,9 @@
       overflow: hidden;
       .greenery.right {
         display: block;
-        transform: scale(1.1) rotate(-10deg);
-        margin-top: -20px;
+        transform: rotate(-28deg) translateX(-65px);
       }
       .circle-logo {
-        filter: invert(100);
         width: 300px;
         height: 300px;
         display: block;
@@ -75,12 +73,14 @@
        display: none !important;
      }
      .text-container {
-       max-width: 200px !important;
+       max-width: 300px !important;
        padding: 5px;
        padding-top: 0px;
        font-size: 10px;
        position: relative;
        z-index: 999;
+       color: $black;
+       text-shadow: none;
      }
    }
    .col-xs-4 {
@@ -101,8 +101,8 @@
       max-height: 100%;
       top: 0;
       opacity: .6;
-      left: 50%;
-      transform: translateX(-50%);
+      right: 0;
+      transform: rotate(-28deg) translateX(20px);
      }
    }
 

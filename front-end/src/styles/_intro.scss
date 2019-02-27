@@ -71,9 +71,9 @@
       }
     }
     h2 {
-      color: $black;
+      color: $ice;
       &:before, &:after {
-        border-color: $black;
+        border-color: $ice;
       }
     }
   }
@@ -82,14 +82,14 @@
     position: relative;
     padding: 20px 0px 40px 0px;
     margin-top: -5px;
-    border-top: 2px solid black;
+    border-top: 2px solid $ice;
     bottom: 0;
     .cta-description {
       width: 90%;
       border: none;
       height: unset;
       align-items: center;
-      color: black;
+      color: $green;
       h3 {
         font-size: calc(20px + (48 - 20) * ((100vw - 300px) / (1200 - 300)));
       }

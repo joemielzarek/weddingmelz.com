@@ -18,28 +18,28 @@
     align-items: center;
     margin: 20px 0px;
     &.col-1 {
-      border-top: 1px solid $black;
+      border-top: 1px solid $gold;
       padding-top: 30px;
       position: relative;
       &:before {
         content:"";
         height: 100px;
         width: 1px;
-        background: $black;
+        background: $gold;
         display: block;
         position: absolute;
         bottom: 100%;
       }
     }
     &.col-3 {
-      border-bottom: 1px solid $black;
+      border-bottom: 1px solid $gold;
       padding-bottom: 30px;
       position: relative;
       &:after {
         content:"";
         height: 100px;
         width: 1px;
-        background: $black;
+        background: $gold;
         display: block;
         position: absolute;
         top: 100%;

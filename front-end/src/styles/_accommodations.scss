@@ -9,8 +9,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 5px solid $black;
-  border-bottom: 5px solid $black;
+  border-top: 5px solid $gold;
+  border-bottom: 5px solid $gold;
   .hotel-banner {
     position: absolute;
     margin-top: -280px;
@@ -41,7 +41,7 @@
       color: $pink;
     }
     h5 {
-      font-size: 24px;
+      font-size: 19px;
       font-family: $sacramento;
       span {
         font-size: 28px;

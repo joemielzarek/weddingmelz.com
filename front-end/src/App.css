@@ -30,7 +30,7 @@ button {
     width: 100vw; }
 
 .section-title {
-  font-family: "delight-script-alt", cursive;
+  font-family: "delight-script", cursive;
   font-size: 32px;
   padding-top: 40px;
   width: 100vw; }
@@ -222,7 +222,7 @@ select:focus {
   .main-nav {
     display: block;
     height: 100%;
-    max-height: 185px;
+    max-height: 300px;
     position: absolute; }
     .main-nav .logo-container {
       display: block !important;
@@ -264,7 +264,7 @@ select:focus {
     flex-direction: column;
     padding: 0 30px; }
     .call-to-action .cta-description h3 {
-      font-family: "delight-script-alt", cursive, cursive;
+      font-family: "delight-script", cursive, cursive;
       text-transform: lowercase;
       font-weight: 100;
       font-size: 48px;
@@ -300,22 +300,22 @@ select:focus {
       .section-title.first h2 {
         margin: 0; }
     .section-title h2 {
-      color: #222; }
+      color: #cbefff; }
       .section-title h2:before, .section-title h2:after {
-        border-color: #222; }
+        border-color: #cbefff; }
   .call-to-action {
     height: auto;
     position: relative;
     padding: 20px 0px 40px 0px;
     margin-top: -5px;
-    border-top: 2px solid black;
+    border-top: 2px solid #cbefff;
     bottom: 0; }
     .call-to-action .cta-description {
       width: 90%;
       border: none;
       height: unset;
       align-items: center;
-      color: black; }
+      color: #05352b; }
       .call-to-action .cta-description h3 {
         font-size: calc(20px + (48 - 20) * ((100vw - 300px) / (1200 - 300))); }
       .call-to-action .cta-description p, .call-to-action .cta-description button {
@@ -348,25 +348,23 @@ select:focus {
       .row .section-content .gradient-container img {
         width: 400px;
         height: 600px;
-        background: #222;
-        border: 8px solid #fff;
-        border-bottom: 0;
+        background: #cfc498;
+        border: 8px solid #cfc498;
         display: block;
         position: relative;
         margin-bottom: -150px;
         margin-right: -100px; }
       .row .section-content .gradient-container .text-container {
         max-width: 25vw;
-        color: #222;
-        font-family: "Lato", sans-serif; }
+        color: #efefef;
+        font-family: "Lato", sans-serif;
+        text-shadow: 1px 1px 0px #648e91a4; }
     .row .section-content .col-xs-4 {
       overflow: hidden; }
       .row .section-content .col-xs-4 .greenery.right {
         display: block;
-        transform: scale(1.1) rotate(-10deg);
-        margin-top: -20px; }
+        transform: rotate(-28deg) translateX(-65px); }
       .row .section-content .col-xs-4 .circle-logo {
-        filter: invert(100);
         width: 300px;
         height: 300px;
         display: block;
@@ -391,12 +389,14 @@ select:focus {
       .row .section-content .gradient-container img {
         display: none !important; }
       .row .section-content .gradient-container .text-container {
-        max-width: 200px !important;
+        max-width: 300px !important;
         padding: 5px;
         padding-top: 0px;
         font-size: 10px;
         position: relative;
-        z-index: 999; }
+        z-index: 999;
+        color: #222;
+        text-shadow: none; }
     .row .section-content .col-xs-4 {
       min-height: 100px;
       width: 100vw;
@@ -415,8 +415,8 @@ select:focus {
         max-height: 100%;
         top: 0;
         opacity: .6;
-        left: 50%;
-        transform: translateX(-50%); }
+        right: 0;
+        transform: rotate(-28deg) translateX(20px); }
   #section-one {
     height: auto !important; } }
 
@@ -436,22 +436,23 @@ select:focus {
     position: relative;
     flex-direction: column;
     justify-content: center;
-    z-index: 1; }
+    z-index: 1;
+    margin-left: 160px; }
     .row .section-content .date-grid-container h2 {
       font-family: "Lato", sans-serif;
       font-size: 32px; }
     .row .section-content .date-grid-container .date-grid-banner {
-      border: 10px solid #eee;
+      border: 10px solid #cbefff;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100px;
       padding: 30px;
       border-bottom: none;
-      background-color: white; }
+      background-color: rgba(255, 255, 255, 0.5); }
       .row .section-content .date-grid-container .date-grid-banner h3 {
         font-family: "Lato", sans-serif;
-        color: #eee;
+        color: #cbefff;
         font-size: 90px;
         top: 0px;
         z-index: 0;
@@ -461,20 +462,20 @@ select:focus {
         align-items: center; }
       .row .section-content .date-grid-container .date-grid-banner h4 {
         position: absolute;
-        font-family: "delight-script-alt", cursive;
+        font-family: "delight-script", cursive;
         font-size: 50px;
         line-height: 1;
-        margin-top: 0px;
+        margin-top: 13px;
         color: #05352b;
         font-weight: normal; }
     .row .section-content .date-grid-container .date-grid-row-top {
       display: flex;
       flex-direction: row;
       width: 100%;
-      background-color: white; }
+      background-color: rgba(255, 255, 255, 0.5); }
       .row .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell {
         width: 33.33%;
-        border: 10px solid #eee;
+        border: 10px solid #cbefff;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -484,7 +485,7 @@ select:focus {
           z-index: 1; }
         .row .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell h3 {
           font-family: "Lato", sans-serif;
-          color: #eee;
+          color: #cbefff;
           font-size: 90px;
           top: 0px;
           z-index: 0;
@@ -494,7 +495,7 @@ select:focus {
           align-items: center; }
         .row .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell h4 {
           position: absolute;
-          font-family: "delight-script-alt", cursive;
+          font-family: "delight-script", cursive;
           font-size: 50px;
           line-height: 1;
           margin-top: 0px;
@@ -509,10 +510,10 @@ select:focus {
       display: flex;
       flex-direction: row;
       width: 100%;
-      background-color: white; }
+      background-color: rgba(255, 255, 255, 0.5); }
       .row .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell {
         width: 50%;
-        border: 10px solid #eee;
+        border: 10px solid #cbefff;
         height: 300px;
         display: flex;
         justify-content: center;
@@ -540,7 +541,7 @@ select:focus {
           border-left: none; }
         .row .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell h2 {
           font-size: 50px;
-          font-family: "delight-script-alt", cursive;
+          font-family: "delight-script", cursive;
           font-weight: normal;
           margin: 10px;
           color: #05352b; }
@@ -558,13 +559,13 @@ select:focus {
 .details-image {
   max-width: 70%;
   position: relative;
-  border: 10px solid #05352b;
+  border: 10px solid #cfc498;
   z-index: 0; }
 
 .backround-accent-details {
   height: 700px;
   width: 90%;
-  background-color: #eee;
+  background-color: #cbefff;
   position: absolute;
   z-index: 0;
   margin-top: -40px; }
@@ -592,9 +593,11 @@ select:focus {
     transform: translateX(-50%);
     margin-bottom: 100px; }
   .details-image {
-    max-width: 200px; }
+    max-width: 300px;
+    margin-top: 100px; }
   .date-grid-container {
-    margin-top: -50px; }
+    margin-top: -50px;
+    margin-left: 0px !important; }
     .date-grid-container .date-grid-row-top {
       flex-direction: column !important;
       display: none !important; }
@@ -707,12 +710,12 @@ select:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 5px solid #222;
-  border-bottom: 5px solid #222; }
+  border-top: 5px solid #cfc498;
+  border-bottom: 5px solid #cfc498; }
   .column-container .hotel-banner {
     position: absolute;
     margin-top: -280px;
-    font-family: "delight-script-alt", cursive;
+    font-family: "delight-script", cursive;
     font-size: 30px;
     color: #222;
     font-weight: normal; }
@@ -734,10 +737,10 @@ select:focus {
     .column-container .col-xs-2 h4 {
       font-size: 30px;
       margin: 10px 0px;
-      color: pink; }
+      color: #cfc498; }
     .column-container .col-xs-2 h5 {
-      font-size: 24px;
-      font-family: "delight-script-alt", cursive; }
+      font-size: 19px;
+      font-family: "delight-script", cursive; }
       .column-container .col-xs-2 h5 span {
         font-size: 28px;
         font-family: "Lato", sans-serif; }
@@ -790,26 +793,26 @@ select:focus {
     align-items: center;
     margin: 20px 0px; }
     .column-container-registry .column.col-1 {
-      border-top: 1px solid #222;
+      border-top: 1px solid #cfc498;
       padding-top: 30px;
       position: relative; }
       .column-container-registry .column.col-1:before {
         content: "";
         height: 100px;
         width: 1px;
-        background: #222;
+        background: #cfc498;
         display: block;
         position: absolute;
         bottom: 100%; }
     .column-container-registry .column.col-3 {
-      border-bottom: 1px solid #222;
+      border-bottom: 1px solid #cfc498;
       padding-bottom: 30px;
       position: relative; }
       .column-container-registry .column.col-3:after {
         content: "";
         height: 100px;
         width: 1px;
-        background: #222;
+        background: #cfc498;
         display: block;
         position: absolute;
         top: 100%; }

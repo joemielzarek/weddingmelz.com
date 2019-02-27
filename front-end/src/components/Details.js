@@ -3,7 +3,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import { Row, Col } from 'react-flexbox-grid';
 
 
-import UsECC from '../images/ecc-image.JPG';
+import UsECC from '../images/ecc-image.jpg';
 
 
 export default class Details extends Component {
@@ -15,9 +15,9 @@ export default class Details extends Component {
   <Col xs={12}>
     <div className="section-title"><h2>details</h2></div>
     <Col xs={12} className="section-content">
-      <Col xs={1} >
-      </Col>
-    <Col xs={7}>
+      {/* <Col xs={1} >
+      </Col> */}
+    <Col xs={8}>
       <div className="date-grid-container">
         <div className="date-grid-banner"><h3>#weddingmelz</h3><h4>the future mr. and mrs. mielzarek</h4></div>
           <div className="date-grid-row-top">
@@ -50,7 +50,7 @@ export default class Details extends Component {
           </div>
       </div>
       </Col>
-      <Col xs={4}>
+      <Col xs={5}>
       <img className="details-image" src={UsECC} alt="joe and bailey"/>
       </Col>
     </Col>
