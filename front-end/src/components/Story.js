@@ -27,7 +27,7 @@ export default class Story extends Component {
                   </div>
                 </Col>
                 <Col xs={4}>
-                  <img className="circle-logo" src={logoAlt} alt="logo" />
+                  <embed className="circle-logo" src={logoAlt} alt="logo" />
                   <img className="greenery right" src={Greenery} alt="greenery" />
                 </Col>
               </Col>

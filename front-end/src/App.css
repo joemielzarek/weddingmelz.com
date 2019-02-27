@@ -349,7 +349,7 @@ select:focus {
         width: 400px;
         height: 600px;
         background: #cfc498;
-        border: 8px solid #cfc498;
+        border: 8px solid #fff;
         display: block;
         position: relative;
         margin-bottom: -150px;
@@ -449,7 +449,7 @@ select:focus {
       height: 100px;
       padding: 30px;
       border-bottom: none;
-      background-color: rgba(255, 255, 255, 0.5); }
+      background-color: rgba(255, 255, 255, 0.8); }
       .row .section-content .date-grid-container .date-grid-banner h3 {
         font-family: "Lato", sans-serif;
         color: #cbefff;
@@ -472,7 +472,7 @@ select:focus {
       display: flex;
       flex-direction: row;
       width: 100%;
-      background-color: rgba(255, 255, 255, 0.5); }
+      background-color: rgba(255, 255, 255, 0.8); }
       .row .section-content .date-grid-container .date-grid-row-top .date-grid-top-cell {
         width: 33.33%;
         border: 10px solid #cbefff;
@@ -510,7 +510,7 @@ select:focus {
       display: flex;
       flex-direction: row;
       width: 100%;
-      background-color: rgba(255, 255, 255, 0.5); }
+      background-color: rgba(255, 255, 255, 0.8); }
       .row .section-content .date-grid-container .date-grid-row-bottom .date-grid-bottom-cell {
         width: 50%;
         border: 10px solid #cbefff;
