@@ -593,7 +593,7 @@ select:focus {
     transform: translateX(-50%);
     margin-bottom: 100px; }
   .details-image {
-    max-width: 300px;
+    max-width: 295px;
     margin-top: 100px; }
   .date-grid-container {
     margin-top: -50px;

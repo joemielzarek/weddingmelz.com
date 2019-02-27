@@ -17,7 +17,7 @@ export default class Details extends Component {
     <Col xs={12} className="section-content">
       {/* <Col xs={1} >
       </Col> */}
-    <Col xs={8}>
+    <Col xs={8}> 
       <div className="date-grid-container">
         <div className="date-grid-banner"><h3>#weddingmelz</h3><h4>the future mr. and mrs. mielzarek</h4></div>
           <div className="date-grid-row-top">
