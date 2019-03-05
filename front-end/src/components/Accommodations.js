@@ -38,6 +38,7 @@ export default class accommodations extends Component {
                   <p>(952) 567-5000</p>
                   <p>3201 Galleria<br></br> Edina, MN 55435</p>
                   <a target="_blank" href="https://www.marriott.com/hotels/travel/mspwi-the-westin-edina-galleria/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2">Book Now</a>
+                  <p><em>Limited availability</em></p>
                 </Col>
               </div>
             </Col>
