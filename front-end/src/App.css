@@ -356,7 +356,7 @@ select:focus {
         margin-right: -100px; }
       .row .section-content .gradient-container .text-container {
         max-width: 25vw;
-        color: #efefef;
+        color: #fff;
         font-family: "Lato", sans-serif;
         text-shadow: 1px 1px 0px #648e91a4; }
     .row .section-content .col-xs-4 {
@@ -623,6 +623,16 @@ select:focus {
       font-size: 40px !important; }
     .date-grid-banner h4 {
       text-align: center; } }
+
+.help {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  text-align: center; }
+  .help a {
+    color: #05352b; }
+
+footer {
+  margin-top: 50px; }
 
 #section-three {
   min-height: 100vh;

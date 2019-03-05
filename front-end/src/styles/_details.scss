@@ -250,3 +250,17 @@
       }
     }
   }
+
+
+  .help {
+    font-family: $gotham;
+    font-size: 12px;
+    text-align: center;
+    a {
+      color: $green;
+    }
+  }
+
+  footer {
+    margin-top: 50px;
+  }
